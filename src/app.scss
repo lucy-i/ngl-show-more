@@ -6,12 +6,12 @@ my-app {
     display: block;
 }
 
-[ngl-show-more] {
+[show-more] {
     pointer-events: none;
     margin-bottom: 20px;
 }
 
-[ngl-show-more]::after {
+[show-more]::after {
     pointer-events: auto;
     position: absolute;
     text-decoration: underline;
@@ -26,14 +26,14 @@ my-app {
 
 /* Let's get this party started */
 
-[ngl-show-more]::-webkit-scrollbar {
+[show-more]::-webkit-scrollbar {
     width: 5px;
 }
 
 
 /* Track */
 
-[ngl-show-more]::-webkit-scrollbar-track {
+[show-more]::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     -webkit-border-radius: 10px;
     border-radius: 10px;
@@ -42,18 +42,18 @@ my-app {
 
 /* Handle */
 
-[ngl-show-more]::-webkit-scrollbar-thumb {
+[show-more]::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
     background: rgb(43, 182, 231);
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
-[ngl-show-more]::-webkit-scrollbar-thumb:window-inactive {
+[show-more]::-webkit-scrollbar-thumb:window-inactive {
     background: rgb(43, 182, 231);
 }
 
-/*[ngl-show-more]::after {
+/*[show-more]::after {
     background: #b9c9d4;
     background-image: -webkit-linear-gradient(top, #b9c9d4, #676869);
     background-image: -moz-linear-gradient(top, #b9c9d4, #676869);
@@ -71,7 +71,7 @@ my-app {
     text-decoration: none;
 }*/
 /*
-[ngl-show-more]:hover::after {
+[show-more]:hover::after {
     background: #717475;
     background-image: -webkit-linear-gradient(top, #717475, #85888a);
     background-image: -moz-linear-gradient(top, #717475, #85888a);

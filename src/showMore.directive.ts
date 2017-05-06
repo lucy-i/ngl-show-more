@@ -2,7 +2,7 @@ import { Component, Inject, ElementRef, ViewChild, HostListener, Directive, Inpu
 import { DOCUMENT } from "@angular/platform-browser";
 
 @Directive({
-  selector: 'ngl-show-more,[ngl-show-more]',
+  selector: 'show-more,[show-more]',
 })
 export class ShowMoreDirective implements OnInit, AfterViewInit {
   pseudostyle: string = "pseudoStyle" + UID.getNew();
