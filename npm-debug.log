@@ -1,0 +1,149 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\nodejs\\node.exe',
+1 verbose cli   'C:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.10
+3 info using node@v6.9.5
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'D:\\GitRepository\\show-more',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\user\AppData\Roaming\npm-cache\show-more\0.1.0\package.tgz not in flight; packing
+9 verbose correctMkdir C:\Users\user\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 info lifecycle show-more@0.1.0~prepublish: show-more@0.1.0
+11 silly lifecycle show-more@0.1.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ 'C:\\Users\\user\\AppData\\Roaming\\npm-cache\\show-more\\0.1.0\\package.tgz',
+12 verbose tar pack   'D:\\GitRepository\\show-more' ]
+13 verbose tarball C:\Users\user\AppData\Roaming\npm-cache\show-more\0.1.0\package.tgz
+14 verbose folder D:\GitRepository\show-more
+15 verbose addLocalTarball adding from inside cache C:\Users\user\AppData\Roaming\npm-cache\show-more\0.1.0\package.tgz
+16 verbose correctMkdir C:\Users\user\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+17 silly cache afterAdd show-more@0.1.0
+18 verbose afterAdd C:\Users\user\AppData\Roaming\npm-cache\show-more\0.1.0\package\package.json not in flight; writing
+19 verbose correctMkdir C:\Users\user\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+20 verbose afterAdd C:\Users\user\AppData\Roaming\npm-cache\show-more\0.1.0\package\package.json written
+21 silly publish { name: 'show-more',
+21 silly publish   version: '0.1.0',
+21 silly publish   scripts:
+21 silly publish    { build: 'gulp build',
+21 silly publish      'build:watch': 'gulp',
+21 silly publish      docs: 'npm run docs:build',
+21 silly publish      'docs:build': 'compodoc -p tsconfig.json -n show-more -d docs --hideGenerator',
+21 silly publish      'docs:serve': 'npm run docs:build -- -s',
+21 silly publish      'docs:watch': 'npm run docs:build -- -s -w',
+21 silly publish      lint: 'tslint --type-check --project tsconfig.json src/**/*.ts',
+21 silly publish      test: 'tsc && karma start' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/masterram/show-more.git' },
+21 silly publish   author: { name: 'MasteRam', email: 'ramkumar.murugarasan@hotmail.com' },
+21 silly publish   keywords: [ 'angular' ],
+21 silly publish   license: 'MIT',
+21 silly publish   bugs: { url: 'https://github.com/masterram/show-more/issues' },
+21 silly publish   devDependencies:
+21 silly publish    { '@angular/common': '^4.0.0',
+21 silly publish      '@angular/compiler': '^4.0.0',
+21 silly publish      '@angular/compiler-cli': '^4.0.0',
+21 silly publish      '@angular/core': '^4.0.0',
+21 silly publish      '@angular/platform-browser': '^4.0.0',
+21 silly publish      '@angular/platform-browser-dynamic': '^4.0.0',
+21 silly publish      '@compodoc/compodoc': '^1.0.0-beta.7',
+21 silly publish      '@types/jasmine': '2.5.38',
+21 silly publish      '@types/node': '~6.0.60',
+21 silly publish      codelyzer: '~2.0.0',
+21 silly publish      'core-js': '^2.4.1',
+21 silly publish      del: '^2.2.2',
+21 silly publish      gulp: '^3.9.1',
+21 silly publish      'gulp-rollup': '^2.11.0',
+21 silly publish      'jasmine-core': '~2.5.2',
+21 silly publish      'jasmine-spec-reporter': '~3.2.0',
+21 silly publish      karma: '~1.4.1',
+21 silly publish      'karma-chrome-launcher': '~2.0.0',
+21 silly publish      'karma-cli': '~1.0.1',
+21 silly publish      'karma-coverage-istanbul-reporter': '^0.2.0',
+21 silly publish      'karma-jasmine': '~1.1.0',
+21 silly publish      'karma-jasmine-html-reporter': '^0.2.2',
+21 silly publish      'node-watch': '^0.5.2',
+21 silly publish      protractor: '~5.1.0',
+21 silly publish      rollup: '^0.41.6',
+21 silly publish      'run-sequence': '^1.2.2',
+21 silly publish      rxjs: '^5.1.0',
+21 silly publish      'ts-node': '~2.0.0',
+21 silly publish      tslint: '~4.5.0',
+21 silly publish      typescript: '~2.2.0',
+21 silly publish      'zone.js': '^0.8.4' },
+21 silly publish   engines: { node: '>=6.0.0' },
+21 silly publish   readme: '# show-more\r\n\r\n## Installation\r\n\r\nTo install this library, run:\r\n\r\n```bash\r\n$ npm install show-more --save\r\n```\r\n\r\n## Consuming your library\r\n\r\nOnce you have published your library to npm, you can import your library in any Angular application by running:\r\n\r\n```bash\r\n$ npm install show-more\r\n```\r\n\r\nand then from your Angular `AppModule`:\r\n\r\n```typescript\r\nimport { BrowserModule } from \'@angular/platform-browser\';\r\nimport { NgModule } from \'@angular/core\';\r\n\r\nimport { AppComponent } from \'./app.component\';\r\n\r\n// Import your library\r\nimport { ShowMoreModule } from \'show-more\';\r\n\r\n@NgModule({\r\n  declarations: [\r\n    AppComponent\r\n  ],\r\n  imports: [\r\n    BrowserModule,\r\n    ShowMoreModule\r\n    // Specify your library as an import\r\n    LibraryModule\r\n  ],\r\n  providers: [],\r\n  bootstrap: [AppComponent]\r\n})\r\nexport class AppModule { }\r\n```\r\n\r\nOnce your library is imported, you can use its components, directives and pipes in your Angular application:\r\n\r\n```xml\r\n<!-- You can now use your library component in app.component.html -->\r\n<h1>\r\n  {{title}}\r\n</h1>\r\n<div show-more min-height="100" max-height="300" style="width:100px;float:left;">\r\nStudents seek relief from rising prices through the purchase of used copies of textbooks, which tend to be less expensive. Most college bookstores offer used copies of textbooks at lower prices. Most bookstores will also buy used copies back from students at the end of a term if the book is going to be re-used at the school. Books that are not being re-used at the school are often purchased by an off-campus wholesaler for 0-30% of the new cost, for distribution to other bookstores where the books will be sold. Textbook companies have countered this by encouraging faculty to assign homework that must be done on the publisher\'s website. If a student has a new textbook, then he or she can use the pass code in the book to register on the site. If the student has purchased a used textbook, then he or she must pay money directly to the publisher in order to access the website and complete assigned homework.\r\n\r\nStudents who look beyond the campus bookstore can typically find lower prices. With the ISBN or title, author and edition, most textbooks can be located through online used book sellers or retailers.\r\n</div>\r\n```\r\n\r\n## Development\r\n\r\nTo generate all `*.js`, `*.d.ts` and `*.metadata.json` files:\r\n\r\n```bash\r\n$ npm run build\r\n```\r\n\r\nTo lint all `*.ts` files:\r\n\r\n```bash\r\n$ npm run lint\r\n```\r\n\r\n## License\r\n\r\nMIT © [MasteRam](mailto:ramkumar.murugarasan@hotmail.com)\r\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'd9929b65b3d332b2b61ecebcbf14152eb7daece3',
+21 silly publish   description: 'To install this library, run:',
+21 silly publish   homepage: 'https://github.com/masterram/show-more#readme',
+21 silly publish   _id: 'show-more@0.1.0',
+21 silly publish   _shasum: '27be8d570505a66d2762e1339bb778d932dfe64b',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name show-more
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'show-more',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'show-more',
+26 silly mapToRegistry   name: 'show-more',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/show-more
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading C:\Users\user\AppData\Roaming\npm-cache\show-more\0.1.0\package.tgz
+30 verbose request uri https://registry.npmjs.org/show-more
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 12:21:19 PM
+33 verbose request using bearer token for auth
+34 verbose request id dda7e4c8ddc44710
+35 http request PUT https://registry.npmjs.org/show-more
+36 http 403 https://registry.npmjs.org/show-more
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '103',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Sat, 06 May 2017 06:51:17 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-sin18032-SIN',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1494053476.476802,VS0,VE1008',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating C:\Users\user\AppData\Roaming\npm-cache\registry.npmjs.org\show-more on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: you do not have permission to publish "show-more". Are you logged in as the correct user? : show-more
+40 verbose stack     at makeError (C:\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (C:\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:290:14)
+40 verbose stack     at Request._callback (C:\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
+40 verbose stack     at Request.self.callback (C:\nodejs\node_modules\npm\node_modules\request\request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (C:\nodejs\node_modules\npm\node_modules\request\request.js:1048:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (C:\nodejs\node_modules\npm\node_modules\request\request.js:969:12)
+41 verbose statusCode 403
+42 verbose pkgid show-more
+43 verbose cwd D:\GitRepository\show-more
+44 error Windows_NT 6.1.7601
+45 error argv "C:\\nodejs\\node.exe" "C:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+46 error node v6.9.5
+47 error npm  v3.10.10
+48 error code E403
+49 error you do not have permission to publish "show-more". Are you logged in as the correct user? : show-more
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]

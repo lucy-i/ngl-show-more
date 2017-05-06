@@ -1,0 +1,26 @@
+{
+  "name": "show-more",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/masterram/show-more"
+  },
+  "author": {
+    "name": "MasteRam",
+    "email": "ramkumar.murugarasan@hotmail.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/masterram/show-more/issues"
+  },
+  "module": "show-more.js",
+  "typings": "show-more.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}

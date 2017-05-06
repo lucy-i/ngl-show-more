@@ -1,0 +1,82 @@
+/* You can add global styles to this file, and also import other style files */
+
+my-app {
+    width: 100%;
+    height: 800px;
+    display: block;
+}
+
+[show-more] {
+    pointer-events: none;
+    margin-bottom: 20px;
+}
+
+[show-more]::after {
+    pointer-events: auto;
+    position: absolute;
+    text-decoration: underline;
+    cursor: pointer;
+    color:blue;
+    top: 110px;
+    /*left: 0px;*/
+    font-size: 13px;
+    /*background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);*/
+}
+
+
+/* Let's get this party started */
+
+[show-more]::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+/* Track */
+
+[show-more]::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+[show-more]::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgb(43, 182, 231);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+[show-more]::-webkit-scrollbar-thumb:window-inactive {
+    background: rgb(43, 182, 231);
+}
+
+/*[show-more]::after {
+    background: #b9c9d4;
+    background-image: -webkit-linear-gradient(top, #b9c9d4, #676869);
+    background-image: -moz-linear-gradient(top, #b9c9d4, #676869);
+    background-image: -ms-linear-gradient(top, #b9c9d4, #676869);
+    background-image: -o-linear-gradient(to bottom, #b9c9d4, #676869);
+    background-image: linear-gradient(to bottom, #b9c9d4, #676869);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    font-family: Arial;
+    color: #ffffff;
+    
+    padding: 2px 5px 2px 5px;
+    border: solid #b7bbbd 0px;
+    text-decoration: none;
+}*/
+/*
+[show-more]:hover::after {
+    background: #717475;
+    background-image: -webkit-linear-gradient(top, #717475, #85888a);
+    background-image: -moz-linear-gradient(top, #717475, #85888a);
+    background-image: -ms-linear-gradient(top, #717475, #85888a);
+    background-image: -o-linear-gradient(top, #717475, #85888a);
+    background-image: linear-gradient(to bottom, #717475, #85888a);
+ text-decoration: none;
+}*/
