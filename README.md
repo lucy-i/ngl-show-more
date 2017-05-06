@@ -73,4 +73,4 @@ $ npm run lint
 
 ## License
 
-MIT © [MasteRam](mailto:ramkumar.murugarasan@hotmail.com)
+MIT © [lucy](mailto:lucy@lucy.in)
